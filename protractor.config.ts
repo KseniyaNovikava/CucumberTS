@@ -15,7 +15,7 @@ export let config = {
     frameworkPath: require.resolve('protractor-cucumber-framework'),
 
     specs: [
-        'e2e/features/*.feature'
+        'e2e/features/epam-tsflow.feature'
     ],
 
     onPrepare: () => {
@@ -26,6 +26,10 @@ export let config = {
     },
     cucumberOpts: {
         compiler: "ts:ts-node/register",
+        compilerOptions: {
+  "target": "ES6",
+  "module": "commonjs"
+},
         monochrome: true,
         strict: true,
         format: ['pretty', 'json:e2e/output/cucumber.json'],
