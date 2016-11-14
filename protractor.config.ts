@@ -15,7 +15,7 @@ export let config = {
     frameworkPath: require.resolve('protractor-cucumber-framework'),
 
     specs: [
-        'e2e/features/epam-tsflow.feature'
+         'e2e/features/*.feature'
     ],
 
     onPrepare: () => {
@@ -34,6 +34,7 @@ export let config = {
         strict: true,
         format: ['pretty', 'json:e2e/output/cucumber.json'],
         require: ['e2e/step_definitions/**/*.ts', 'e2e/support/**/*.ts'],
-        tags: '@M2JS'
+        //tags: '@M2JS'
+        tags:''
     }
 };

@@ -1,7 +1,7 @@
 Feature: e2e cucumber tests
 
 
-  Scenario: Header navigation
+  Scenario: Header navigation tsflow
     Given I open home page tsflow
     When page is opened tsflow
     And career item is loaded tsflow
@@ -29,7 +29,7 @@ Feature: e2e cucumber tests
     And I expect to see "Contact" heading tsflow
 
 @M2JS
-  Scenario: Job Serach
+  Scenario: Job Serach tsflow
     Given I open home page tsflow
     When page is opened tsflow
     And career item is loaded tsflow
